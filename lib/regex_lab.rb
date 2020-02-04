@@ -22,5 +22,7 @@ return rul[0] == text
 end
 
 def valid_phone_number?(phone)
+check = phone.scan(/([0-9])/).join("")
+return check.length == 10
 
 end
